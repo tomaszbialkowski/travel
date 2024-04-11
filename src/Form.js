@@ -29,7 +29,7 @@ export default function Form({ onAddItems }) {
         onChange={(e) => setQuantity(Number(e.target.value))}
         value={quantity}
       >
-        {/* tworzenie tablicy z liczbami od 1 do 20 a potem jej zmapowanie*/}
+        {/* tworzenie tablicy z liczbami od 1 do 20 a potem jej zmapowanie i stworzenie <option> z indeksami tej tablicy jako wartościami */}
         {Array.from({ length: 20 }, (_, i) => i + 1).map((num) => (
           <option value={num} key={num}>
             {num}
